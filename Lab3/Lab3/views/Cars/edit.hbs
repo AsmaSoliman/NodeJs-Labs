@@ -1,0 +1,8 @@
+<form action="/edit/{{car.id}}" method="post">
+<input value="{{car.id}}" name="id" type="hidden">
+<div>Car Name</div><input value="{{car.name}}" name="name" type="text">
+<div>Car Image URL</div><input value="{{car.img}}" name="img" type="text">
+<div>
+    <button type="submit">edit Car</button>
+</div>
+</form>

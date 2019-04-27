@@ -1,0 +1,20 @@
+<div style="text-align: center; ">
+    <h1>Cars</h1>
+    <button>
+            <a style="text-decoration: none" href="/add">Add Car</a>
+    </button>
+</div>
+<div style="display: flex ; width:1500px">
+        {{#each Cars}}
+        <div style="border: 0.5px solid gray;width:300px;padding:5px;margin:20px">
+          <img style="width:300px;height:200px"  src={{this.img}} alt="Car Image">
+          <h2 style="text-align: center;">{{this.name}}</h2>
+          <button>
+            <a style="text-decoration: none" href="/edit/{{this.id}}">Edit Car</a>
+          </button>
+          <button>
+            <a style="text-decoration: none" href="/delete/{{this.id}}">Delete Car</a>
+          </button>
+        </div>  
+        {{/each}}
+</div>
